@@ -89,7 +89,7 @@ export const Section2 = () => {
             <div className="experience">
                 <Canvas shadows camera={{ position: [0, 0, 10], fov: 35 }} >
                     <Suspense>
-                        <Float fallback >
+                        <Float speed={2} fallback >
                             <Model rotate={rotate} setRotate={setRotate} />
                         </Float>
                         <Environment preset='warehouse' />
@@ -99,13 +99,13 @@ export const Section2 = () => {
 
             <div className="two-left">
                 <div className={`info-main ${isVisibleOne ? 'visible' : ''}`} ref={oneRef}>
-                    <p className="description-two white">NATURALLY FLAVORED</p>
-                    <h1 className="two-big-headline">SELTZER</h1>
+                    <p className="description-two black">TASTES LIKE COFFEE</p>
+                    <h1 className="two-big-headline">ELIXIR</h1>
                     <p className="description-two white">330 ML</p>
                 </div>
                 <div className={`info-ingredients ${isVisibleTwo ? 'visible' : ''}`} ref={twoRef}>
-                    <p className="two-medium-headline white">INGREDIENTS</p>
-                    <h1 className="description-two">ALCOHOL, NATURAL FLAVOR, CANE SUGAR, SODIUM CITRATE, TRIPOTASSIUM CITRATE</h1>
+                    <p className="two-medium-headline black">TIRED FROM COFFEE?</p>
+                    <h1 className="description-two">We combined our well-loved coffee with mushrooms. It creates a great pairing and the perfect replacement for your daily coffee.</h1>
                 </div>
             </div>
 
@@ -122,29 +122,27 @@ export const Section2 = () => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    className="wave-button-mobile"
+                    className="two-button"
                     onClick={handleRotate}
                 >
-                    <h1 className="button-text">ROTATE CAN</h1>
-                    <div className='wave' />
+                    <h1 className="button-text">ROTATE</h1>
                 </motion.button>
                 )}
 
             <div className="two-right">
                 <div className={`drink-introduction ${isVisibleThree ? 'visible' : ''}`} ref={threeRef}>
-                    <h1 className="two-medium-headline white">INTRODUCTION TO DRINK</h1>
-                    <p className="description">Discover the essence of refreshment with Classic Dialed Seltzers. Crafted for those who embrace life's challenges, our naturally flavored seltzer provides a crisp and energizing experience. With 5% alcohol and only 100 calories, it's the perfect blend of flavor and vitality. Whether you're pushing your limits or relaxing after a long day, Classic Dialed Seltzers are there to keep you refreshed and invigorated. Seize every moment with a drink that's as bold and dynamic as you are.</p>
+                    <h1 className="two-medium-headline black">ENJOY A CUP THAT OFFERS A NATURAL SOLUTION FOR STEADY ENERGY AND CLEAR FOCUS</h1>
+                    <p className="description">Crafted with care, our blend features 90% USDA Organic Arabica Coffee, 5% USDA Organic Lion's Mane Mushroom Powder, and 5% USDA Organic Chaga Mushroom Powder. Enjoy a cup that nourishes both, your body and mind.</p>
                 </div>
                 <div className={`rotation-button ${isVisibleFour ? 'visible' : ''}`} ref={fourRef}>
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="wave-button"
+                        className="two-button"
                         onClick={handleRotate}
                     >
-                        <h1 className="button-text">ROTATE CAN</h1>
-                        <div className='wave' />
+                        <h1 className="button-text">ROTATE</h1>
                     </motion.button>
                 </div>
             </div>

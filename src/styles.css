@@ -156,12 +156,10 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 2vh;
 }
 
-.one-title {
-}
-
-.title-back {
+.title {
   font-family: 'Freudian One', sans-serif;
   font-size: 9.5vw;
   font-weight: 300;
@@ -236,7 +234,7 @@ section {
 
 .dottedLine .cls-1 {
   fill: none;
-  stroke: #010001;
+  stroke: #1d1c1c;
   stroke-width: 2;
   stroke-dasharray: 5, 2;
   animation: dashAnimation 5s linear infinite;
@@ -366,7 +364,7 @@ section {
 .description {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1.25vw;
+  font-size: 1vw;
   line-height: 115%;
 }
 
@@ -374,6 +372,20 @@ section {
   font-family: 'Freudian One', sans-serif;
   font-size: 1.25vw;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+.two-button {
+  height: 2.75vw;
+  width: fit-content;
+  background-color: #1d1c1c;
+  border-radius: 150px;
+  padding: 0 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
 }
 
 /* SECTION THREE */
@@ -494,7 +506,7 @@ html.lenis {
   display: grid;
   place-items: center;
   text-align: center;
-  background-color: #010001;
+  background-color: #f9f6e5;
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
@@ -519,7 +531,7 @@ html.lenis {
   font-size: 5vw;
   text-transform: uppercase;
   margin: 0;
-  color: #fffefe;
+  color: #1d1c1c;
 }
 
 .progress__container {
@@ -534,7 +546,7 @@ html.lenis {
 .progress__bar {
   width: 0;
   height: 100%;
-  background-color: #fffefe;
+  background-color: #1d1c1c;
   transition: width 0.5s ease-in-out;
 }
 

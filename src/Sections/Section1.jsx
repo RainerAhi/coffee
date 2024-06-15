@@ -104,22 +104,13 @@ export const Section1 = () => {
             </div>
             <div className="one-content">
                 <div className="one-text-contents">
-                    <div className="one-title">
-                        <h1 className="title-back">FUEL YOUR BODY <br /> ENERGIZE YOUR LIFE</h1>
-                    </div>
+                    <h1 className="title">FUEL YOUR BODY <br /> ENERGIZE YOUR LIFE</h1>
                     <div className="dottedLine" style={{ opacity: hideScrollText ? 0 : 1, transition: "opacity 0.3s ease-in-out", pointerEvents: hideScrollText ? "none" : "auto", }}>
                         <svg viewBox="0 0 800 1">
                             <line className="cls-1" y1=".5" x2="800" y2=".5" />
                         </svg>
                     </div>
-                    <h1
-                        style={{
-                            opacity: hideScrollText ? 0 : 1,
-                            transition: "opacity 0.3s ease-in-out",
-                            pointerEvents: hideScrollText ? "none" : "auto",
-                        }}
-                        className="title-description"
-                    >
+                    <h1 style={{ opacity: hideScrollText ? 0 : 1, transition: "opacity 0.3s ease-in-out", pointerEvents: hideScrollText ? "none" : "auto", }} className="title-description">
                         COFFEE MADE BETTER
                     </h1>
                 </div>
