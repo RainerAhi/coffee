@@ -84,21 +84,13 @@ export const Section1 = () => {
                 </div>
                 <img src="./logohere2.png" className="navigation-logo" />
                 <div className="navigation-left">
-                    <motion.div
-                        className="buy buy-desktop"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    >
-                        <i className="fa-solid fa-cart-shopping"></i>
-                    </motion.div>
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                         className="navigation-button" 
                     >
-                        <h1 className="button-text" >CONTACT</h1>
+                        <h1 className="button-text" >BUTTON</h1>
                     </motion.button>
                 </div>
             </div>

@@ -52,7 +52,7 @@ section {
 .navigation {
   width: 100%;
   height: 10vh;
-  padding: 0 2.5%;
+  padding: 0 5%;
   border-bottom: solid 1px #1d1c1c;
   display: flex;
   flex-direction: row;
@@ -364,7 +364,7 @@ section {
 .description {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1vw;
+  font-size: 1.25vw;
   line-height: 115%;
 }
 
@@ -395,81 +395,91 @@ section {
   justify-content: center;
   align-items: center;
   background-color: #f9f6e5;
+  padding: 0 10%;
+  margin-top: 10vh;
 }
 
 .three-content {
   width: 100%;
   height: 100vh;
-  background-color: #f9f6e575;
-  backdrop-filter: blur(16px);
-  z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .three-title {
-  font-family: 'ROSEFORD DEMO', sans-serif;
-  font-size: 4vw;
-  text-align: center;
-  color: #1d1c1c;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.three-title.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.three-description {
   font-family: 'Freudian One', sans-serif;
-  font-size: 1.25vw;
-  font-weight: 400;
+  font-size: 9.5vw;
+  font-weight: 300;
+  line-height: 85%;
+  color: #1d1c1c;
   margin-bottom: 0;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+  margin-top: 0;
+  position: relative;
 }
 
-.three-description.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.three-bottom-texts {
+.key-features-column {
   display: flex;
-  width: 70%;
-  gap: 1vh;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+  flex-direction: column;
+  margin-top: 10vh;
+  gap: 10vh;
 }
 
-.three-bottom-texts.visible {
-  opacity: 1;
-  transform: scale(1);
+.column-border {
+  height: 1px;
+  width: 100%;
+  background-color: #1d1c1c;
 }
 
-.three-bottom-left {
-  width: 50%;
+.key-features-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.three-bottom-right {
-  width: 50%;
+.row-border {
+  width: 1px;
+  height: 100%;
+  background-color: #1d1c1c;
 }
 
-.three-small-description {
+.key-feature-box {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+}
+
+.fa-solid {
+  font-size: 2vw;
+  color: #1d1c1c;
+}
+
+.key-features-box-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.key-feature-title {
+  font-family: 'ROSEFORD DEMO', sans-serif;
+  font-size: 2vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 70%;
+  color: #1d1c1c;
+}
+
+.key-feature-description {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1vw;
-  line-height: 150%;
+  font-size: 1.25vw;
+  line-height: 115%;
   margin-top: 0;
+  margin-bottom: 0;
 }
+
+
 
 /* SMOOTH SCROLL */
 
