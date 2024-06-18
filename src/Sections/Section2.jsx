@@ -100,7 +100,7 @@ export const Section2 = () => {
             <div className="two-left">
                 <div className={`info-main ${isVisibleOne ? 'visible' : ''}`} ref={oneRef}>
                     <p className="description-two black">COFFEE FROM MUSHROOMS</p>
-                    <h1 className="two-big-headline">ELIXIR</h1>
+                    <h1 className="two-big-headline gold">ELIXIR</h1>
                     <p className="description-two white">330 ML</p>
                 </div>
                 <div className={`info-ingredients ${isVisibleTwo ? 'visible' : ''}`} ref={twoRef}>

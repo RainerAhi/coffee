@@ -63,21 +63,21 @@ export const Section1 = () => {
                     <motion.div
                         whileHover={{ y: -5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        onClick={() => handleClick('https://www.instagram.com/dialedweb')}
+                        onClick={() => handleClick('https://www.instagram.com/')}
                     >
                         <i className="fa-brands navigation-icons fa-instagram"></i>
                     </motion.div>
                     <motion.div
                         whileHover={{ y: -5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        onClick={() => handleClick('https://www.youtube.com/channel/UC8-bljvEXqCTOF1-xdwFYtg')}
+                        onClick={() => handleClick('https://www.youtube.com/')}
                     >
                         <i className="fa-brands navigation-icons fa-youtube"></i>
                     </motion.div>
                     <motion.div
                         whileHover={{ y: -5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        onClick={() => handleClick('https://www.instagram.com/dialedweb')}
+                        onClick={() => handleClick('https://www.instagram.com/')}
                     >
                         <i className="fa-brands navigation-icons fa-tiktok"></i>
                     </motion.div>
