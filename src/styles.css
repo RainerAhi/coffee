@@ -269,7 +269,7 @@ section {
   color: transparent;
   text-stroke: 0.1vw #1d1c1c;
   -webkit-text-stroke: 0.1vw #1d1c1c;
-  z-index: 20;
+  z-index: 0;
   position: absolute;
 }
 
