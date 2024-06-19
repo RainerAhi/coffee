@@ -96,7 +96,10 @@ export const Section1 = () => {
             </div>
             <div className="one-content">
                 <div className="one-text-contents">
-                    <h1 className="title">FUEL YOUR BODY <br /> ENERGIZE YOUR LIFE</h1>
+                    <div class="headline-container" >
+                        <h1 className="text-behind" >FUEL YOUR BODY<br />ENERGIZE YOUR LIFE</h1>
+                        <h1 className="text-front">FUEL YOUR BODY<br />ENERGIZE YOUR LIFE</h1>
+                    </div>
                     <div className="dottedLine" style={{ opacity: hideScrollText ? 0 : 1, transition: "opacity 0.3s ease-in-out", pointerEvents: hideScrollText ? "none" : "auto", }}>
                         <svg viewBox="0 0 800 1">
                             <line className="cls-1" y1=".5" x2="800" y2=".5" />

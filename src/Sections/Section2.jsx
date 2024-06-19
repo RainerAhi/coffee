@@ -101,10 +101,9 @@ export const Section2 = () => {
                 <div className={`info-main ${isVisibleOne ? 'visible' : ''}`} ref={oneRef}>
                     <p className="description-two black">COFFEE FROM MUSHROOMS</p>
                     <h1 className="two-big-headline gold">ELIXIR</h1>
-                    <p className="description-two white">330 ML</p>
                 </div>
                 <div className={`info-ingredients ${isVisibleTwo ? 'visible' : ''}`} ref={twoRef}>
-                    <p className="two-medium-headline black">TIRED FROM COFFEE?</p>
+                    <p className="two-medium-headline black mobile-hide">TIRED FROM COFFEE?</p>
                     <h1 className="description-two">We combined our well-loved coffee with mushrooms. It creates a great pairing and the perfect replacement for your daily coffee.</h1>
                 </div>
             </div>
@@ -117,21 +116,9 @@ export const Section2 = () => {
             >
             </motion.div>
 
-            {isMobile && (
-                    <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    className="two-button"
-                    onClick={handleRotate}
-                >
-                    <h1 className="button-text">ROTATE</h1>
-                </motion.button>
-                )}
-
             <div className="two-right">
                 <div className={`drink-introduction ${isVisibleThree ? 'visible' : ''}`} ref={threeRef}>
-                    <h1 className="two-medium-headline black">ENJOY A CUP THAT OFFERS A NATURAL SOLUTION FOR STEADY ENERGY AND CLEAR FOCUS</h1>
+                    <h1 className="two-medium-headline black mobile-hide">ENJOY A CUP THAT OFFERS A NATURAL SOLUTION FOR STEADY ENERGY AND CLEAR FOCUS</h1>
                     <p className="description">Crafted with care, our blend features 90% USDA Organic Arabica Coffee, 5% USDA Organic Lion's Mane Mushroom Powder, and 5% USDA Organic Chaga Mushroom Powder. Enjoy a cup that nourishes both, your body and mind.</p>
                 </div>
                 <div className={`rotation-button ${isVisibleFour ? 'visible' : ''}`} ref={fourRef}>

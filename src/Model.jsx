@@ -89,6 +89,19 @@ export default function Model({ rotate, setRotate, ...props }) {
             immediateRender: false,
           },
         })
+
+        .to(model.current.scale, {
+          x: isMobile ? 0.5 : 0.9,
+          y: isMobile ? 0.5 : 0.9,
+          z: isMobile ? 0.5 : 0.9,
+          scrollTrigger: {
+            trigger: ".two",
+            start: "top bottom",
+            end: "top top",
+            scrub: true,
+            immediateRender: false,
+          },
+        })
         .to(".experience", {
           position: "absolute",
           scrollTrigger: {
