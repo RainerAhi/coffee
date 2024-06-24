@@ -20,27 +20,15 @@ export const Section5 = () => {
         <section className="five">
           <div className="five-content" >
             <div className="five-socials" >
-              <motion.div
-                whileHover={{ y: -5 }}
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://www.instagram.com/')}
+                className="navigation-button"
+                onClick={() => handleClick('https://www.shopify.com/')}  
               >
-                <i className="fa-brands footer-icons fa-instagram"></i>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://www.youtube.com/')}
-              >
-                <i className="fa-brands footer-icons fa-youtube"></i>
-              </motion.div>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                onClick={() => handleClick('https://www.instagram.com/')}
-              >
-                <i className="fa-brands footer-icons fa-tiktok"></i>
-              </motion.div>
+                <h1 className="button-text" >SHOP NOW</h1>
+              </motion.button>
             </div>
             <div className="legal" onClick={toggleOverlay}>
               <h1 className="legal-text" >Legal Note</h1>

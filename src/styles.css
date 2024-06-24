@@ -133,8 +133,11 @@ section {
 }
 
 .navigation-logo {
-  position: relative;
-  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  height: 50%; 
 }
 /* SECTION ONE */
 
@@ -665,6 +668,7 @@ section {
 .legal {
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
 
 .legal-text {
@@ -909,7 +913,10 @@ html.lenis {
 }
 
 .navigation-logo {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   height: 20%;
 }
 

@@ -49,17 +49,7 @@ export const Section1 = () => {
         <section className="one">
             <div className="mobile-scroll"/>
             <div className={`navigation ${navScrolled ? "scrolled" : ""}`}>
-                {isMobile && (
-                <motion.div
-                    className="buy"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                >
-                    <i className="fa-solid fa-cart-shopping"></i>
-                </motion.div>
-                )}
-                <div className="navigation-right">
+                {/* <div className="navigation-right">
                     <motion.div
                         whileHover={{ y: -5 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -81,16 +71,17 @@ export const Section1 = () => {
                     >
                         <i className="fa-brands navigation-icons fa-tiktok"></i>
                     </motion.div>
-                </div>
-                <img src="./logohere2.png" className="navigation-logo" />
+                </div> */}
+                <img src="./logohere2.png" className="navigation-logo"/>
                 <div className="navigation-left">
                     <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        className="navigation-button" 
+                        className="navigation-button"
+                        onClick={() => handleClick('https://www.shopify.com/')}  
                     >
-                        <h1 className="button-text" >BUTTON</h1>
+                        <h1 className="button-text" >SHOP NOW</h1>
                     </motion.button>
                 </div>
             </div>
